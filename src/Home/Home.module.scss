@@ -1,0 +1,18 @@
+@import "../styles/global";
+.img {
+  height: 26vh;
+  background-color: #fed631;
+  background-image: url("../Images/african_lady.png");
+  background-repeat: no-repeat;
+  background-size: 47vh;
+  background-position: left;
+}
+
+.black_lady {
+  width: 80%;
+  padding-left: 5px;
+}
+
+.slogan{
+ @extend .catch-phrase
+}

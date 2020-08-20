@@ -1,0 +1,23 @@
+.navContainer {
+  min-width: 25%;
+}
+
+.navigationMenu {
+  display: flex;
+  flex-flow: row;
+
+  justify-content: space-evenly;
+}
+
+.hamburger,
+.searchIcon {
+  margin:0 1vh;
+  :global {
+    path:last-child {
+      fill: #585858;
+    }
+  }
+}
+
+.navigationList {
+}
