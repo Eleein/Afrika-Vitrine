@@ -1,36 +1,34 @@
 import React from "react";
 import Slider from "react-slick";
-import yellow from "./Images/2020-08-16 16_04_37-yellow woman.png";
-import afrika from "./Images/2020-08-16 15_58_08-afrika-vitrine.png";
-import another from "./Images/AnotherTest.png";
-import shea from "./Images/14-best-shea-moisture-products.jpg";
+import { Image } from "./Image/Image";
+import handmade from "./Images/handmade.jpg";
+import kunst from "./Images/kunst.jpg";
+import schmuck from "./Images/schmuck.jpg";
+import woodart from "./Images/woodart.jpg";
+
+const imagesList = [
+  { id: 1, src: handmade },
+  { id: 2, src: kunst },
+  { id: 3, src: schmuck },
+  { id: 4, src: woodart },
+];
 
 export function ProductSlider() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
   };
 
   return (
     <div>
-      <h1>Here goes the Slides:</h1>
       <Slider {...settings}>
-        <div>
-          <img src={afrika} />
-        </div>
-        <div>
-          <img src={yellow} />
-        </div>
-        <div>
-          <img src={shea} />
-        </div>
-        <div>
-          <img src={another} />
-        </div>
+        {imagesList.map((photo) => (
+          <Image key={photo.id} src={photo.src} />
+        ))}
       </Slider>
     </div>
   );
