@@ -1,6 +1,5 @@
 @import "../styles/global";
 
-
 .img {
   height: 26vh;
   background-color: #fed631;
@@ -8,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: 47vh;
   background-position: left;
-  margin-bottom: 4vh;
+  margin-bottom: 5vh;
   position: relative;
 }
 
@@ -17,20 +16,32 @@
   padding-left: 5px;
 }
 
-.slogan, .sloganPartTwo{
- @extend .catch-phrase;
+.slogan,
+.sloganPartTwo {
+  @extend .catch-phrase;
   position: absolute;
 
   font-size: calc(3vh);
-
 }
 
-.slogan{
+.slogan {
   bottom: 27%;
   left: 6%;
 }
 
-.sloganPartTwo{
+.sloganPartTwo {
   bottom: 13%;
   left: 20%;
+}
+
+.description {
+  background-color: #4f8d1f;
+  color: white;
+  margin-top: 5vh;
+  text-align: center;
+  padding: 6vh;
+}
+
+.descriptionText {
+  text-align: left;
 }
