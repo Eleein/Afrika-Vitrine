@@ -40,8 +40,27 @@
   margin-top: 5vh;
   text-align: center;
   padding: 6vh;
+  min-height: 17vh;
 }
 
 .descriptionText {
   text-align: left;
+}
+
+@media screen and (min-width: 481px) {
+  .img {
+    background-position: center;
+  }
+  .description {
+    padding: 3vh 6vh 7vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+  }
+  .descriptionText {
+    text-align: left;
+    width: 86%;
+  }
 }
