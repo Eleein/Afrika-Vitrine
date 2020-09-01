@@ -39,12 +39,17 @@
   color: white;
   margin-top: 5vh;
   text-align: center;
-  padding: 6vh;
-  min-height: 17vh;
+  padding: 19px 27px 43px 27px;
+  min-height: 16vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .descriptionText {
   text-align: left;
+  flex: 0.2 1;
 }
 
 @media screen and (min-width: 481px) {
@@ -53,14 +58,23 @@
   }
   .description {
     padding: 3vh 6vh 7vh;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
     font-size: 20px;
   }
   .descriptionText {
     text-align: left;
-    width: 86%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .description {
+    padding: 10px 55px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .descriptionText {
+    text-align: justify;
   }
 }
