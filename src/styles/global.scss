@@ -110,6 +110,8 @@ section {
 }
 body {
   line-height: 1;
+  position: relative;
+  min-height: 100vh;
 }
 ol,
 ul {
@@ -138,6 +140,12 @@ body {
 .catch-phrase{
   font-family: Zilla Slab, san-serif, serif;
   font-style: italic;
-  color: white;
+  color: white
 
 }
+
+.App > div:first-child {
+  padding-bottom: 1.5rem;
+       }
+
+
