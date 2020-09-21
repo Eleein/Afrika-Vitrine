@@ -1,13 +1,14 @@
 import React from "react";
+import styles from "./App.module.scss";
 import { Route, Switch } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { Header } from "./Header/Header";
-import { Footer } from "./zFooter/Footer";
+import { Footer } from "./Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <div className="content-wrap">
+      <div className={styles.appLayoutContainer}>
         <header>
           <Header />
         </header>
@@ -16,7 +17,7 @@ function App() {
             <Home />
           </Route>
           <Route path="*">
-            <div>Whatever, dude</div>
+            <div>If you see this page Routing is working</div>
           </Route>
         </Switch>
       </div>

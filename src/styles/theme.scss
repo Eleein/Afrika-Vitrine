@@ -1,0 +1,20 @@
+//colors
+$hero-bkgd-color: #fed631;
+$green-section: #4f8d1f;
+$white: #fff;
+$redStripes: #cb463e;
+
+//font size
+$descriptiveText: 20px;
+
+
+//variables
+.flexVertical {
+  display: flex;
+  flex-flow: column;
+}
+
+.flexHorizontal{
+  display: flex;
+  flex-flow: row;
+}

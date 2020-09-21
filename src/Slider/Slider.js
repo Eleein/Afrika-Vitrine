@@ -23,13 +23,32 @@ export function ProductSlider() {
     autoplay: false,
   };
 
+  const tabletSettings = {
+    dots: true,
+    infinite: true,
+    speed: 900,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+  };
+
+  const tabletMode = matchMedia("(min-width: 700px)").matches;
+
   return (
     <div>
-      <Slider {...settings}>
-        {imagesList.map((photo) => (
-          <Image key={photo.id} src={photo.src} />
-        ))}
-      </Slider>
+      {tabletMode ? (
+        <Slider {...tabletSettings}>
+          {imagesList.map((photo) => (
+            <Image key={photo.id} src={photo.src} />
+          ))}
+        </Slider>
+      ) : (
+        <Slider {...settings}>
+          {imagesList.map((photo) => (
+            <Image key={photo.id} src={photo.src} />
+          ))}
+        </Slider>
+      )}
     </div>
   );
 }

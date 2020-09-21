@@ -1,8 +1,8 @@
 @import "../styles/global";
-
+@import "../styles/theme";
 .img {
   height: 26vh;
-  background-color: #fed631;
+  background-color: $hero-bkgd-color;
   background-image: url("../Images/african_lady.png");
   background-repeat: no-repeat;
   background-size: 47vh;
@@ -20,7 +20,6 @@
 .sloganPartTwo {
   @extend .catch-phrase;
   position: absolute;
-
   font-size: calc(3vh);
 }
 
@@ -35,16 +34,15 @@
 }
 
 .description {
-  background-color: #4f8d1f;
-  color: white;
+  background-color: $green-section;
+  color: $white;
   margin-top: 5vh;
   text-align: center;
   padding: 19px 27px 43px 27px;
   min-height: 16vh;
-  display: flex;
-  flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
+  @extend .flexVertical;
 }
 
 .descriptionText {
@@ -58,7 +56,7 @@
   }
   .description {
     padding: 3vh 6vh 7vh;
-    font-size: 20px;
+    font-size: $descriptiveText;
   }
   .descriptionText {
     text-align: left;
@@ -72,7 +70,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: $descriptiveText;
   }
   .descriptionText {
     text-align: justify;
