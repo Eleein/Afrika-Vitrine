@@ -7,7 +7,7 @@ import { Search } from "./Search/Search";
 export function Header() {
   return (
     <div>
-      <div className={styles.yellowRibbon}/>
+      <div className={styles.redRibbon}/>
       <div className={styles.menuLayout}>
         <Menu />
         <Logo />

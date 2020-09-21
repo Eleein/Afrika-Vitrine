@@ -1,11 +1,10 @@
+@import "../../styles/theme";
 .navContainer {
   min-width: 25%;
 }
 
 .navigationMenu {
-  display: flex;
-  flex-flow: row;
-
+  @extend .flexHorizontal;
   justify-content: space-evenly;
 }
 

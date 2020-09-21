@@ -1,6 +1,8 @@
-.yellowRibbon {
+@import "../styles/theme";
+
+.redRibbon {
   height: 7vh;
-  background-color: #cb463e;
+  background-color: $red-stripes;
 }
 .menuLayout {
   min-height: 14vh;
